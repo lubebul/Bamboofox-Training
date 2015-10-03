@@ -1,4 +1,4 @@
-# Bamboofox-Training
+# CTF Club Training
 It's a learning note from [Bamboofox club](https://bamboofox.torchpad.com/Class/club) at NTCU
 
 ## Lesson
