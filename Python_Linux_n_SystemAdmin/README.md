@@ -7,11 +7,14 @@ slides: [Linux_and_SA](Linux_and_SA.pptx)
    * 交大網路安全實務期末互打比賽，每個主機上有可以執行任何command的漏洞，大家都忙著寫script過濾command，據說很多人被```$($0)```打死XD
   * `touch`: create an empty file, `cat file`: print file content to stdout, `nc`: create TCP/UDP connection/listen, `cmd1 | cmd2`: pipe stdout of cmd1 as stdin of cmd2
  * **Kali Linux**：綜合了各種滲透測試工具的作業系統，Ubuntu的好親戚
+
 ## Python
 slides: [Python](Python.pptx)
- * **Socket**: basic module for TCP/UDP connections
- * **Struct**
- * **Pwntools**
+ * **Socket**： basic module for TCP/UDP connections
+ * **Struct**：把byte包裝成little-endian 或是 big-endian的模組
+ * **Pwntools**：有超多好用的工具
+  * TCP/UDP connection：只要一行XD 還有interactive module
+  * 寫shellcode, working with elf, gdb, memory leak, rop chain, translate assembly to string, ...
 
 # Today's Vulnerable
 pickle 是個可以把class serialized 和deserialized 的module，以下程式能叫出shell！
