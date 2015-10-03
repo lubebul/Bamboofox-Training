@@ -1,6 +1,6 @@
 # Slides
 ## Linux and System Admin
-slides: [Linux_and_SA](Python_Linux_n_SystemAdmin/Linux_and_SA.pptx)
+slides: [Linux_and_SA](Linux_and_SA.pptx)
  * **Linux Common Command**
   * `echo $0`: 印出目前在跑的process名稱
    * 如果是$($0) => $() 開啟shell，$0 => 就是shell！
@@ -8,7 +8,7 @@ slides: [Linux_and_SA](Python_Linux_n_SystemAdmin/Linux_and_SA.pptx)
   * `touch`: create an empty file, `cat file`: print file content to stdout, `nc`: create TCP/UDP connection/listen, `cmd1 | cmd2`: pipe stdout of cmd1 as stdin of cmd2
  * **Kali Linux**：綜合了各種滲透測試工具的作業系統，Ubuntu的好親戚
 ## Python
-slides: [Python](Python_Linux_n_SystemAdmin/Python.pptx)
+slides: [Python](Python.pptx)
  * **Socket**: basic module for TCP/UDP connections
  * **Struct**
  * **Pwntools**
