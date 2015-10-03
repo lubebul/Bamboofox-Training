@@ -1,6 +1,17 @@
 # Slides
- 1. [Linux_and_SA](Python_Linux_n_SystemAdmin/Linux_and_SA.pptx)： **Kali Linux**, **Bash Shells**
- 2. [Python](Python_Linux_n_SystemAdmin/Python.pptx)：**Socket**, **Struct**, **Pwntools** modules
+## Linux and System Admin
+slides: [Linux_and_SA](Python_Linux_n_SystemAdmin/Linux_and_SA.pptx)
+ * **Linux Common Command**
+  * `echo $0`: 印出目前在跑的process名稱
+   * 如果是$($0) => $() 開啟shell，$0 => 就是shell！
+   * 交大網路安全實務期末互打比賽，每個主機上有可以執行任何command的漏洞，大家都忙著寫script過濾command，據說很多人被```$($0)```打死XD
+  * `touch`: create an empty file, `cat file`: print file content to stdout, `nc`: create TCP/UDP connection/listen, `cmd1 | cmd2`: pipe stdout of cmd1 as stdin of cmd2
+ * **Kali Linux**：綜合了各種滲透測試工具的作業系統，Ubuntu的好親戚
+## Python
+slides: [Python](Python_Linux_n_SystemAdmin/Python.pptx)
+ * **Socket**: basic module for TCP/UDP connections
+ * **Struct**
+ * **Pwntools**
 
 # Today's Vulnerable
 pickle 是個可以把class serialized 和deserialized 的module，以下程式能叫出shell！

