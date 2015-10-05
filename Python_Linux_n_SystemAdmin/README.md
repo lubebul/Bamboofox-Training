@@ -1,6 +1,8 @@
 # Slides
+ * [Linux_and_SA](Linux_and_SA.pptx)
+ * [Python](Python.pptx)
+ 
 ## Linux and System Admin
-slides: [Linux_and_SA](Linux_and_SA.pptx)
  * **Linux Common Command**
   * `echo $0`: 印出目前在跑的process名稱
    * 如果是$($0) => $() 開啟shell，$0 => 就是shell！
@@ -9,7 +11,6 @@ slides: [Linux_and_SA](Linux_and_SA.pptx)
  * **Kali Linux**：綜合了各種滲透測試工具的作業系統，Ubuntu的好親戚
 
 ## Python
-slides: [Python](Python.pptx)
  * **Socket**： basic module for TCP/UDP connections
  * **Struct**：把byte包裝成little-endian 或是 big-endian的模組
  * **Pwntools**：有超多好用的工具
