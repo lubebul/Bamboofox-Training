@@ -106,7 +106,7 @@ $ objdump -d eggReverse2
 ## Solve
 正確的字串就是 `A1[i] ^ A2[i % len(A2)]`, for i = 0 to len(A1)
  * 用gdb 找出 A1, A2
- ```
+```
  (gdb) b *0x8048593
  (gdb) x 0x80486d0
  (gdb) x 0x80486d4
@@ -114,5 +114,5 @@ $ objdump -d eggReverse2
  (gdb) x 0x80486ca
  (gdb) x 0x80486ce
  ... until find '\0'
- ```
+```
  * 寫[python script](solve.py) 解決
