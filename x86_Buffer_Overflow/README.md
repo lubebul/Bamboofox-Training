@@ -1,5 +1,9 @@
 # Buffer Overflow and x86
-How Buffer Overflow Happens?
+Slides
+ * [Buffer Overflow](Buffer overflow and format string.pdf)
+ * [x86](x86.pdf)
+
+## How Buffer Overflow Happens?
  * use unsafe functions
  * copy data without boundary check
 
@@ -28,6 +32,7 @@ strncat(buf, s, sizeof(buf)); // should be sizeof(buf)-1
  * return-oriented programming
 
 ## Stack Protector
+
 ### Stack Canary
 How does it work?
  * protects stack by modifying function prologue and epilogue
@@ -41,6 +46,7 @@ How does it work?
  * skip canary
 
 ## Some gdb Tips
+[GDB cheat sheet](GDB Cheat Sheet.pdf)
  * default: stack canary is turned-off!
  * break point at addr: `(gdb) b *0x80486c8`
  * examine stacks: `(gdb) x/40x $ebp`
