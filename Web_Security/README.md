@@ -1,6 +1,7 @@
 # Web Security
 Slides:
  * [Web_Security](Web Security_1120.pdf)
+ * [Burp Suite Tutorial](Burp_Suite.pdf)
 
 ## Why Cookie/Session?
 HTTP 是stateless protocol, 你要怎麼知道user 已經登入你的網站？By Cookie/Session!
